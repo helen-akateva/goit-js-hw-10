@@ -78,6 +78,7 @@ const options = {
         position: 'topRight',
         messageColor: '#fff',
         backgroundColor: '#ef4040',
+        icon: '',
       });
     } else {
       refs.buttonEl.disabled = false;
