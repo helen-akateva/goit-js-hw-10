@@ -74,8 +74,12 @@ const options = {
     if (selectedDates[0].getTime() <= Date.now()) {
       refs.buttonEl.disabled = true;
       return iziToast.error({
-        title: 'Error',
         message: 'Please choose a date in the future',
+        position: 'topRight',
+        messageColor: '#fff',
+        backgroundColor: '#ef4040',
+        icon: '../img/sprite.svg',
+        iconColor: '#fff',
       });
     } else {
       refs.buttonEl.disabled = false;
