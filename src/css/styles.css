@@ -20,36 +20,41 @@
 /* Timer */
 #datetime-picker {
   padding: 10px 12px;
-  font-size: 14px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  margin-right: 10px;
-  width: 220px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border: 1px solid #808080;;
+  border-radius: 4px;
+  margin-right: 8px;
+  width: 272px;
+  color: #2e2f42;
 }
 
-/* Кнопка */
 button[data-start] {
-  padding: 10px 20px;
+  padding: 8px 16px;
   border-radius: 8px;
+  width: 75px;
+  height: 40px;
   border: none;
   background-color: #4e75ff;
   color: #fff;
-  font-weight: 600;
-  font-size: 14px;
+  font-weight: 500;
+  font-size: 16px;
   cursor: pointer;
   transition: background 0.3s;
 }
 
 button[data-start]:hover:not(:disabled) {
-  background-color: #3a5de0;
+  background-color: #6c8cff;
 }
 
 button[data-start]:disabled {
-  background-color: #ccc;
+  background-color: #cfcfcf;
   cursor: not-allowed;
 }
 
-/* Лічильник */
+
 .timer {
   display: flex;
   justify-content: center;
@@ -64,22 +69,19 @@ button[data-start]:disabled {
 }
 
 .value {
-  font-size: 32px;
-  font-weight: 700;
+font-weight: 400;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: 0.04em;
   color: #2e2f42;
 }
 
 .label {
-  font-size: 12px;
-  color: #888;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e2f42;
   text-transform: uppercase;
-  margin-top: 4px;
 }
 
-/* iziToast кастомізація (помилка) */
-.iziToast-error {
-  background: #ff4d4f !important;
-  color: #fff !important;
-  border-radius: 8px !important;
-  font-size: 14px !important;
-}
+
