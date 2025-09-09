@@ -78,7 +78,7 @@ const options = {
         position: 'topRight',
         messageColor: '#fff',
         backgroundColor: '#ef4040',
-        icon: '../img/sprite.svg',
+        icon: 'selection',
         iconColor: '#fff',
       });
     } else {
