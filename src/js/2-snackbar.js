@@ -14,17 +14,7 @@ function handleFormSubmit(event) {
   const delay = formData.get('delay');
   const state = formData.get('state');
 
-  const promise = new Promise((resolve, reject) => {
-    setTimeout(() => {
-      if (state === 'fulfilled') {
-        return resolve(delay);
-      } else {
-        return reject(delay);
-      }
-    }, delay);
-  });
-
-  promise
+  createPromise(delay, state)
     .then(value => {
       return iziToast.success({
         message: `✅ Fulfilled promise in ${delay}ms`,
@@ -45,4 +35,16 @@ function handleFormSubmit(event) {
     });
 
   form.reset();
+}
+
+function createPromise(delay, state) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (state === 'fulfilled') {
+        resolve(delay);
+      } else {
+        reject(delay);
+      }
+    }, delay);
+  });
 }
